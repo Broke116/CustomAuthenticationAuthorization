@@ -11,7 +11,7 @@ namespace AuthenticationAuthorization.Controllers
         // GET: Error
         public ActionResult AccessDenied()
         {
-            return null; // MAKE ERROR PAGE SEND PARAMETER, CONTROL ACCESS DENIED OR OTHER ERROR OCCURS
+            return View();
         }
     }
 }
