@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -48,7 +45,7 @@ namespace AuthenticationAuthorization.Controllers
                     var userData = JsonConvert.SerializeObject(principalModel);
                     var authenticationTicket = new FormsAuthenticationTicket(
                         1,
-                        user.Email,
+                        user.Username,
                         DateTime.Now, 
                         DateTime.Now.AddHours(1),
                         model.RememberMe,
